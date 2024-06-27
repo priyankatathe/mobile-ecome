@@ -4,9 +4,10 @@ const { upload } = require("../utils/upload")
 const cloudinary = require("cloudinary").v2
 
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,//dihbz54le
+    api_key: process.env.CLOUDINARY_API_KEY,//411619863811526
+    api_secret: process.env.CLOUDINARY_API_SECRET,// 1vw7vmtklCRhBJlew00GWDLUiRo
+    
 })
 exports.getAllProducts = asyncHandler(async (req, res) => {
     const result = await Product.find()
